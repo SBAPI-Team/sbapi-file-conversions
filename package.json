@@ -1,0 +1,32 @@
+{
+  "name": "@sbapi-team/sbapi-file-conversions",
+  "version": "1.0.0",
+  "description": "The library that handles file conversions and encodings for SBAPI",
+  "main": "lib/index.js",
+  "repository": "https://github.com/SBAPI-Team/sbapi-file-conversions.git",
+  "author": "SBAPI Team",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@sbapi-team/smilebasic-fileparser": "^1.4.3",
+    "html-entities": "^2.3.2",
+    "jszip": "^3.6.0",
+    "mime-types": "^2.1.30",
+    "ndarray-unpack": "^1.0.0",
+    "node-libpng": "^0.2.18"
+  },
+  "scripts": {
+    "build": "tsc -p src",
+    "test": "yarn build && jest tests/",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/mime-types": "^2.1.0",
+    "@types/ndarray": "^1.0.9",
+    "@types/node": "^15.3.1",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  }
+}
