@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@sbapi-team/smilebasic-fileparser": "^1.5.0",
+    "@sbapi-team/smilebasic-fileparser": "^1.5.1",
     "html-entities": "^2.3.2",
     "jszip": "^3.6.0",
     "mime-types": "^2.1.30",

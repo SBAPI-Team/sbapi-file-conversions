@@ -482,10 +482,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@sbapi-team/smilebasic-fileparser@^1.5.0":
-  version "1.5.0"
-  resolved "https://npm.pkg.github.com/download/@sbapi-team/smilebasic-fileparser/1.5.0/b1b58a0c1693a65dd301244152d92898adfeb7f75730d7cf02292ba5f90c424a#d2de1f0e1c956a2bbce454f3fc3c7985df127979"
-  integrity sha512-PM094TDPwGaHoufwPF6Rx14Y7IkWkzNqvAngE6qJaQSIkX99moqvIGXOdTgsZ9Hfcn/jh7KVy4eRXakiVzTf4A==
+"@sbapi-team/smilebasic-fileparser@^1.5.1":
+  version "1.5.1"
+  resolved "https://npm.pkg.github.com/download/@sbapi-team/smilebasic-fileparser/1.5.1/66df1140907bdcb74fb4bfa8387357cde54afe9c281bc26cabc4da537d7a5367#ce1d7e31a237cfc4f728d2fc3d2195e08d3ebe1c"
+  integrity sha512-xpDHudStbs4WgGhfbpksWyIFEZNvT9wNmVP8ta0I0AGzhUoYp7jPaa6UtxV4UR2SUovzOJdpZb8Keo2OLl6aZg==
   dependencies:
     ndarray "^1.0.19"
 
