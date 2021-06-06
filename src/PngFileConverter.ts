@@ -5,6 +5,7 @@ import { encode as encodePng } from "node-libpng";
 const RGBA5551_RGB_RATIO = (255 / (0b11111));
 
 class PngFileConverter implements FileConverter {
+    public readonly ShortName = "png";
     public readonly ReturnedMimeType = "image/png";
 
     public async CanConvertFile(file: SmileBASICFile) {

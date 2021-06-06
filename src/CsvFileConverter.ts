@@ -2,6 +2,7 @@ import { SmileBASICDataFile, SmileBASICFile, SmileBASICFileType } from "@sbapi-t
 import { FileConverter } from "./FileConverter";
 
 class CsvFileConverter implements FileConverter {
+    public readonly ShortName = "csv";
     public readonly ReturnedMimeType = "text/csv";
 
     async CanConvertFile(file: SmileBASICFile) {

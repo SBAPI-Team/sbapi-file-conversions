@@ -4,6 +4,7 @@ import { encode as encodePng } from "node-libpng";
 
 
 class IconFileConverter implements FileConverter {
+    public readonly ShortName = "icon";
     public readonly ReturnedMimeType = "image/png";
 
     public async CanConvertFile(file: SmileBASICFile) {

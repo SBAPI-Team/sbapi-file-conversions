@@ -5,6 +5,7 @@ import { BestMatchFileConverter } from "./BestMatchFileConverter";
 import mime from "mime-types";
 
 class ZipFileConverter implements FileConverter {
+    public readonly ShortName = "zip";
     public readonly ReturnedMimeType = "application/zip";
 
     public async CanConvertFile(file: SmileBASICFile) {

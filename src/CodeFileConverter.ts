@@ -4,6 +4,7 @@ import { FileConverter } from "./FileConverter";
 
 
 class CodeFileConverter implements FileConverter {
+    public readonly ShortName = "code";
     public readonly ReturnedMimeType = "text/html";
 
     public async CanConvertFile(file: SmileBASICFile) {

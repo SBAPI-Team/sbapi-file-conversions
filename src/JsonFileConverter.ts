@@ -3,6 +3,7 @@ import { FileConverter } from "./FileConverter";
 import unpack from "ndarray-unpack";
 
 class JsonFileConverter implements FileConverter {
+    public readonly ShortName = "json";
     public readonly ReturnedMimeType = "application/json";
 
     async CanConvertFile(file: SmileBASICFile) {
