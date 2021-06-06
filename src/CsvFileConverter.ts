@@ -35,7 +35,7 @@ class CsvFileConverter implements FileConverter {
         let content = dataFile.Content;
         let output = "";
         for (let i = 0; i < content.shape[ 1 ]; i++) {
-            let line: number[] = [];
+            let line: (number | string)[] = [];
             for (let j = 0; j < content.shape[ 0 ]; j++) {
                 line.push(content.get(j, i));
             }

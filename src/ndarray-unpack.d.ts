@@ -1,6 +1,6 @@
 
 declare module "ndarray-unpack" {
     import { NdArray } from "ndarray";
-    function unpack(array: NdArray): Array<number> | Array<Array<number>> | Array<Array<Array<number>>> | Array<Array<Array<Array<number>>>>;
+    function unpack<T extends string | number>(array: NdArray<T>): Array<T> | Array<Array<T>> | Array<Array<Array<T>>> | Array<Array<Array<Array<T>>>>;
     export = unpack;
 }

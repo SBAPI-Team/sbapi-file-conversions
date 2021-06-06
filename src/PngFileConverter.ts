@@ -20,7 +20,7 @@ class PngFileConverter implements FileConverter {
             dataFile = await file.AsDataFile();
         }
 
-        return (dataFile.Content.shape.length === 2 && dataFile.Content.dtype !== "float64");
+        return (dataFile.Content.shape.length === 2 && [ "uint16", "int32" ].includes(dataFile.Content.dtype));
     }
 
     public async ConvertFile(file: SmileBASICFile) {
