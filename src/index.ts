@@ -7,6 +7,7 @@ import { ZipFileConverter } from "./ZipFileConverter";
 import { BestMatchFileConverter } from "./BestMatchFileConverter";
 import { FileConverter } from "./FileConverter";
 import { CodeFileConverter } from "./CodeFileConverter";
+import { JpegFileConverter } from "./JpegFileConverter";
 import { GetSupportedFileConverters } from "./GetSupportedFileConverters";
 
-export { CsvFileConverter, JsonFileConverter, PngFileConverter, TextFileConverter, IconFileConverter, ZipFileConverter, CodeFileConverter, BestMatchFileConverter, FileConverter, GetSupportedFileConverters };
+export { CsvFileConverter, JsonFileConverter, PngFileConverter, TextFileConverter, IconFileConverter, ZipFileConverter, CodeFileConverter, BestMatchFileConverter, FileConverter, JpegFileConverter, GetSupportedFileConverters };

@@ -3,6 +3,7 @@ import { CodeFileConverter } from "./CodeFileConverter";
 import { CsvFileConverter } from "./CsvFileConverter";
 import { FileConverter } from "./FileConverter";
 import { IconFileConverter } from "./IconFileConverter";
+import { JpegFileConverter } from "./JpegFileConverter";
 import { JsonFileConverter } from "./JsonFileConverter";
 import { PngFileConverter } from "./PngFileConverter";
 import { TextFileConverter } from "./TextFileConverter";
@@ -26,6 +27,8 @@ async function GetSupportedFileConverters(file: SmileBASICFile): Promise<FileCon
         } else {
             return [ JsonFileConverter ];
         }
+    } else if (parsedFile.Type === SmileBASICFileType.Jpeg) {
+        return [ JpegFileConverter ];
     } else {
         return [];
     }

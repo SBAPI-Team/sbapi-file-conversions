@@ -6,6 +6,7 @@ import { TextFileConverter } from "./TextFileConverter";
 import { ZipFileConverter } from "./ZipFileConverter";
 import { SmileBASICDataFile, SmileBASICFile, SmileBASICFileType, SmileBASICFileVersion } from "@sbapi-team/smilebasic-fileparser";
 import { FileConverter } from "./FileConverter";
+import { JpegFileConverter } from "./JpegFileConverter";
 
 class BestMatchFileConverter {
     public async ConvertFile(file: SmileBASICFile): Promise<[ content: Buffer, mimeType: string ]> {
@@ -35,6 +36,9 @@ class BestMatchFileConverter {
                 break;
             case SmileBASICFileType.Meta:
                 converter = IconFileConverter;
+                break;
+            case SmileBASICFileType.Jpeg:
+                converter = JpegFileConverter;
                 break;
             default:
                 return [ await file.ToBuffer(), "application/x-octet-stream" ];
