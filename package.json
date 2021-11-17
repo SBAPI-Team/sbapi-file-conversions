@@ -1,6 +1,6 @@
 {
   "name": "@sbapi-team/sbapi-file-conversions",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "The library that handles file conversions and encodings for SBAPI",
   "main": "lib/index.js",
   "repository": "https://github.com/SBAPI-Team/sbapi-file-conversions.git",
@@ -19,6 +19,9 @@
     "build": "tsc -p src",
     "test": "yarn build && jest tests/",
     "prepublish": "yarn build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
