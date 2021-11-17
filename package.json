@@ -10,7 +10,7 @@
   "dependencies": {
     "@sbapi-team/smilebasic-fileparser": "^1.5.0",
     "html-entities": "^2.3.2",
-    "jszip": "^3.6.0",
+    "jszip": "^3.7.0",
     "mime-types": "^2.1.30",
     "ndarray-unpack": "^1.0.0",
     "node-libpng": "^0.2.18"
